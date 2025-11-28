@@ -18,4 +18,4 @@ add_executable(server
 
 find_package(Boost REQUIRED COMPONENTS json)
 target_include_directories(server PRIVATE ${Boost_INCLUDE_DIR})
-target_link_libraries(server PRIVATE boost_system ${Boost_LIBRARIES} Boost::json)
+target_link_libraries(server PRIVATE Boost::headers Boost::json)
